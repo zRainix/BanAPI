@@ -1,0 +1,44 @@
+useful:
+  waitshort: '&7Wait short...'
+  'yes': '&aYes!'
+  'no': '&cNo!'
+  and: and
+  bought: '&aBought!'
+  notbought: '&cNot bought!'
+  soonavaible: '&cSoon avaible.'
+  error: '&4Error!'
+  stop: '&cStop!'
+  enabled: '&2Enabled'
+  disabled: '&cDisabled'
+  playernotxists: '&cThe specified player does not exist.'
+  forever: for ever
+  never: never
+  hours: hours
+  minutes: minutes
+  seconds: seconds
+ban:
+  perm: |-
+    &cDu wurdest &4&lPERMANENT &r&cvon diesem Netzwerk gebannt!
+
+    &7Grund: &6%Reason%
+    &7Du kannst einen Entbannungsantrag auf unserer Website erstellen: &6flaynox.de
+  temp: |-
+    &cDu wurdest &4ZEITLICH &r&cvon diesem Netzwerk gebannt!
+
+    &7Grund: &6%Reason%
+    &7Gebannt bis: &6%Time1%&7 um &6%Time2%&7 Uhr
+    &7Du kannst einen Entbannungsantrag auf unserer Website erstellen: &6flaynox.de
+nick:
+  nicked: '&aYou are now nicked.'
+  unnicked: nickname has been removed.
+  name: '&5Your nickname is: &e%Nickname%'
+mute:
+  perm: |-
+    &cDu wurdest &4&lPERMANENT &r&cgemutet!
+
+    &7Grund: &6%Reason%
+  temp: |-
+    &cDu wurdest &4ZEITLICH &r&cgemutet!
+
+    &7Grund: &6%Reason%
+    &7Gemutet bis: &6%Time1%&7 um &6%Time2%&7 Uhr
