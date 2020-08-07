@@ -7,6 +7,9 @@ BanAPI mit Commands:
   z.B. /ban byKuchen 0 
   
     byKuchen wurde PERMANENT wegen Hacking gebannt
+    
+/ban setcomment (Spieler) (Kommentar)
+  z.B. /ban setcomment byKuchen Diggah der hat zwar nicht gehackt, aber wie er seine Augen bewegt, kam mir sehr suspekt vor
 
 /tempban (Spieler) (Zeit[+Zeitangabe]) (Grund)
 
