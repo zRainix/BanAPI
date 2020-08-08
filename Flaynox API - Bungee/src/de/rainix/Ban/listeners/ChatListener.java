@@ -24,12 +24,12 @@ public class ChatListener implements Listener {
 							new MessageManager(p).getMessage(flaynoxapi.message.Message.MUTE_PERM), "", "",
 							Main.muteUtil.getCause(UUID)));
 				} else if (Main.muteUtil.isTempMuted(UUID)) {
-					e.setCancelled(true);
 					long time = Main.muteUtil.getUntil(UUID);
 					if (time <= System.currentTimeMillis()) {
 						Main.muteUtil.unmute(UUID);
 						return;
 					}
+					e.setCancelled(true);
 					SimpleDateFormat sdf1 = new SimpleDateFormat("dd.MM.");
 					String time1 = sdf1.format(time);
 					SimpleDateFormat sdf2 = new SimpleDateFormat("HH:mm");
@@ -37,8 +37,6 @@ public class ChatListener implements Listener {
 					p.sendMessage(Placeholder.replaceTimeAndReason(
 							new MessageManager(p).getMessage(flaynoxapi.message.Message.MUTE_TEMP), time1, time2,
 							Main.muteUtil.getCause(UUID)));
-				} else {
-					
 				}
 			}
 		}
@@ -58,12 +56,12 @@ public class ChatListener implements Listener {
 								new MessageManager(p).getMessage(flaynoxapi.message.Message.MUTE_PERM), "", "",
 								Main.muteUtil.getCause(UUID)));
 					} else if (Main.muteUtil.isTempMuted(UUID)) {
-						e.setCancelled(true);
 						long time = Main.muteUtil.getUntil(UUID);
 						if (time <= System.currentTimeMillis()) {
 							Main.muteUtil.unmute(UUID);
 							return;
 						}
+						e.setCancelled(true);
 						SimpleDateFormat sdf1 = new SimpleDateFormat("dd.MM.");
 						String time1 = sdf1.format(time);
 						SimpleDateFormat sdf2 = new SimpleDateFormat("HH:mm");

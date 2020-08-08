@@ -2,7 +2,6 @@ package de.rainix.Ban.commands;
 
 import de.rainix.Ban.main.Main;
 import net.md_5.bungee.api.CommandSender;
-import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.plugin.Command;
 import sqlapi.player.PlayerProfile;
 
@@ -55,7 +54,7 @@ public class MuteCommand extends Command {
 										+ name + "§4§l PERMANENT§r§a wegen §6Extrem§a gemutet!"));
 							} else if (code.equals("1")) {
 								mutePlayer(uuid, name, sender.getName(), "Morddrohung",
-										System.currentTimeMillis() + 1000 * 60 * 60 * 24 * 31, false);
+										System.currentTimeMillis() + 2592000000L, false);
 								sender.sendMessage(Main.toBase(Main.PREFIX + "§aDu hast erfolgreich den Spieler §6"
 										+ name + "§4 ZEITLICH§r§a wegen §6Morddrohung§a gemutet!"));
 							} else if (code.equals("2")) {
@@ -126,9 +125,6 @@ public class MuteCommand extends Command {
 			Main.muteUtil.mutePlayer(uuid, executor, reason, l, "", ip, false);
 		} catch (Exception e) {
 			Main.muteUtil.mutePlayer(uuid, executor, reason, l, "", "", false);
-		}
-		if (ProxyServer.getInstance().getPlayer(name) != null) {
-			ProxyServer.getInstance().getPlayer(name).disconnect(Main.toBase("mute temp"));
 		}
 	}
 

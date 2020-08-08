@@ -11,7 +11,7 @@ import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;
 import net.md_5.bungee.config.YamlConfiguration;
 import sqlapi.player.PlayerLanguage;
-import sqlapi.utils.SQLManager;
+import sqlapi.sql.SQLManager;
 
 public class MessageManager {
 

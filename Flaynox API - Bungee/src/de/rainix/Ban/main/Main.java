@@ -45,9 +45,11 @@ public class Main extends Plugin {
 
 	public void onEnable() {
 		plugin = this;
+		banUtil = new BanUtil();
+		muteUtil = new MuteUtil();
 		PluginManager pm = getProxy().getPluginManager();
-		MessageManager.setupMessageManager(this);
 		register(pm);
+		MessageManager.setupMessageManager(this);
 		MySQL.connect();
 		getProxy().getScheduler().schedule(this, new Runnable() {
 
@@ -72,8 +74,6 @@ public class Main extends Plugin {
 				}
 			}
 		}, 20, 20, TimeUnit.SECONDS);
-		banUtil = new BanUtil();
-		muteUtil = new MuteUtil();
 		PreparedStatement ps1;
 		PreparedStatement ps2;
 		try {

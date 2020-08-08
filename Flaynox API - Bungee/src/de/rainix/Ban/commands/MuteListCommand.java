@@ -40,6 +40,8 @@ public class MuteListCommand extends Command {
 			} catch (NullPointerException ex) {
 				sender.sendMessage(Main.toBase("§cFehler"));
 			}
+		} else {
+			sender.sendMessage(Main.toBase(Main.NO_PERMISSION));
 		}
 	}
 }

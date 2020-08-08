@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import sqlapi.utils.SQLManager;
+import sqlapi.sql.SQLManager;
 
 public class MySQL {
 	public static Connection con;
