@@ -1,0 +1,17 @@
+name: API
+version: 3.5
+author: Rainix
+main: de.rainix.Ban.main.Main
+
+commands:
+   permban:
+   tempban:
+   unban:
+   ban:
+   banlist:
+   permmute:
+   tempmute:
+   unmute:
+   mute:
+   mutelist:
+   
